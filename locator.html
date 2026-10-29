@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drop-Off Locator | EcoCycle</title>
+<meta name="description" content="Find certified e-waste collection centres.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html"><span class="leaf" aria-hidden="true">♻️</span> EcoCycle</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+    <nav aria-label="Main"><ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="locator.html" aria-current="page">Drop-Off Locator</a></li><li><a href="pickup.html">Bulk Pickup</a></li><li><a href="calculator.html">Credit Calculator</a></li><li><a href="about.html">About & Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero"><div class="container"><h1>Drop-Off Center Locator</h1><p>Find certified collection points near you. (Sample data for demonstration.)</p></div></section>
+<section class="section">
+  <div class="container">
+    <form class="filters" role="search" onsubmit="return false">
+      <div class="field"><label for="search">Search by area or name</label><input id="search" type="search" placeholder="e.g. Katpadi"></div>
+      <div class="field"><label for="material">Accepted material</label>
+        <select id="material"><option value="all">All materials</option><option value="batteries">Batteries</option><option value="gadgets">Small gadgets</option><option value="appliances">Large appliances</option><option value="screens">Screens &amp; displays</option></select></div>
+      <div class="field"><label>&nbsp;</label><button type="button" class="btn green" id="clear-filters">Clear filters</button></div>
+    </form>
+    <p id="result-count" aria-live="polite"></p>
+    <div class="grid cards three" id="centre-list"></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>EcoCycle</strong><p>Making safe e-waste disposal easy for households and small businesses.</p></div>
+    <div><strong>Pages</strong><br><a href="index.html">Home</a><br><a href="locator.html">Drop-Off Locator</a><br><a href="pickup.html">Bulk Pickup</a><br><a href="calculator.html">Credit Calculator</a><br><a href="about.html">About & Contact</a></div>
+    <div><strong>Contact</strong><p>hello@ecocycle.example<br>Sample project for academic purposes.</p></div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

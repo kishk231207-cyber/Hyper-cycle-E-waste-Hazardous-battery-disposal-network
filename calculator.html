@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recycling Credit Calculator | EcoCycle</title>
+<meta name="description" content="Calculate eco-credits for old gadgets.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html"><span class="leaf" aria-hidden="true">♻️</span> EcoCycle</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">☰</button>
+    <nav aria-label="Main"><ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="locator.html">Drop-Off Locator</a></li><li><a href="pickup.html">Bulk Pickup</a></li><li><a href="calculator.html" aria-current="page">Credit Calculator</a></li><li><a href="about.html">About & Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero"><div class="container"><h1>Recycling Credit Calculator</h1><p>Turn your old gadgets into eco-credits and partner vouchers.</p></div></section>
+<section class="section">
+  <div class="container split">
+    <div>
+      <form class="form-card" id="calc-form" novalidate aria-label="Credit calculator">
+        <div class="form-grid">
+          <div class="field"><label for="type">Gadget type</label>
+            <select id="type" name="type"><option value="">Select...</option><option value="smartphone">Smartphone</option><option value="laptop">Laptop</option><option value="tablet">Tablet</option><option value="television">Television / monitor</option><option value="battery">Battery</option><option value="smallappliance">Small appliance</option><option value="largeappliance">Large appliance</option><option value="charger">Charger / cables</option></select><p class="error"></p></div>
+          <div class="field"><label for="age">Age of gadget (years)</label><input id="age" name="age" type="number" min="0" max="30" step="1"><p class="error"></p></div>
+          <div class="field"><label for="condition">Condition</label>
+            <select id="condition" name="condition"><option value="">Select...</option><option value="working">Working</option><option value="damaged">Damaged</option><option value="dead">Dead / not working</option></select><p class="error"></p></div>
+          <div class="field"><label for="qty">Quantity</label><input id="qty" name="qty" type="number" min="1" max="50" step="1" value="1"><p class="error"></p></div>
+        </div>
+        <p style="margin-top:1rem"><button class="btn green" type="submit">Calculate credits</button> <button class="btn" type="reset">Reset</button></p>
+      </form>
+      <div id="calc-result"></div>
+    </div>
+    <aside class="card">
+      <h3>How credits work</h3>
+      <p>Credits = base value × age factor × condition factor × quantity.</p>
+      <div class="table-wrap"><table class="rate-table">
+        <caption class="sr-only">Voucher tiers</caption>
+        <thead><tr><th>Tier</th><th>Credits</th><th>Voucher</th></tr></thead>
+        <tbody><tr><td>Bronze</td><td>500+</td><td>5% off</td></tr><tr><td>Silver</td><td>1500+</td><td>10% off</td></tr><tr><td>Gold</td><td>3000+</td><td>15% off</td></tr></tbody>
+      </table></div>
+      <p class="hint">Newer and working devices earn more. 10 credits = ₹1.</p>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>EcoCycle</strong><p>Making safe e-waste disposal easy for households and small businesses.</p></div>
+    <div><strong>Pages</strong><br><a href="index.html">Home</a><br><a href="locator.html">Drop-Off Locator</a><br><a href="pickup.html">Bulk Pickup</a><br><a href="calculator.html">Credit Calculator</a><br><a href="about.html">About & Contact</a></div>
+    <div><strong>Contact</strong><p>hello@ecocycle.example<br>Sample project for academic purposes.</p></div>
+  </div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
